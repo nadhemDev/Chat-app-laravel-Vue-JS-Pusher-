@@ -1,3 +1,4 @@
+
 // Fonts
 @import url('https://fonts.googleapis.com/css?family=Nunito');
 
@@ -7,11 +8,11 @@
 // Bootstrap
 @import '~bootstrap/scss/bootstrap';
 
-
 .navbar-laravel {
-    background-color: #fff;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.04);
-  }
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.04);
+}
+
 @import url(https://fonts.googleapis.com/css?family=Lato:400,700);
 
 $green: #86BB71;
@@ -24,21 +25,21 @@ $gray: #92959E;
 }
 
 
-
-.container {
+.container-chat {
   margin: 0 auto;
-  background: #444753;
+  width: 750px;
+  background: #0aaf57;
   border-radius: 5px;
 }
-
+.name{color:#fff}
 .people-list {
   width:260px;
   float: left;
-
+  
   .search {
     padding: 20px;
   }
-
+  
   input {
     border-radius: 3px;
     border: none;
@@ -48,41 +49,43 @@ $gray: #92959E;
     width: 90%;
     font-size: 14px;
   }
-
+  
   .fa-search {
     position: relative;
     left: -25px;
   }
-
+  
   ul {
     padding: 20px;
-    height: 770px;
+    height: 500px;
+   
 
-
-
-
+    
+    
     li {
       padding-bottom: 20px;
+      list-style: none;
+      cursor: pointer;
     }
   }
-
+  
   img {
     float: left;
   }
-
+  
   .about {
     float: left;
     margin-top: 8px;
   }
-
+  
   .about {
     padding-left: 8px;
   }
-
+  
   .status {
     color: $gray;
   }
-
+  
 }
 
 .chat {
@@ -91,32 +94,32 @@ $gray: #92959E;
   background: #F2F5F8;
   border-top-right-radius: 5px;
   border-bottom-right-radius: 5px;
-
+  
   color: #434651;
-
+  
   .chat-header {
     padding: 20px;
     border-bottom: 2px solid white;
-
+    
     img {
       float: left;
     }
-
+    
     .chat-about {
       float: left;
       padding-left: 10px;
       margin-top: 6px;
     }
-
+    
     .chat-with {
       font-weight: bold;
       font-size: 16px;
     }
-
+    
     .chat-num-messages {
       color: $gray;
     }
-
+    
     .fa-star {
       float: right;
       color: #D8DADF;
@@ -124,23 +127,28 @@ $gray: #92959E;
       margin-top: 12px;
     }
   }
-
+  
   .chat-history {
     padding: 30px 30px 20px;
     border-bottom: 2px solid white;
     overflow-y: scroll;
     height: 575px;
-
+    
+    ul{
+      li{
+        list-style: none;
+      }
+    }
     .message-data {
       margin-bottom: 15px;
     }
-
+    
     .message-data-time {
       color: lighten($gray, 8%);
       padding-left: 6px;
     }
-
-    .message {
+    
+    .message {      
       color: white;
       padding: 18px 20px;
       line-height: 26px;
@@ -149,7 +157,7 @@ $gray: #92959E;
       margin-bottom: 30px;
       width: 90%;
       position: relative;
-
+      
       &:after {
         bottom: 100%;
         left: 7%;
@@ -164,25 +172,25 @@ $gray: #92959E;
         margin-left: -10px;
       }
     }
-
+    
     .my-message {
       background: $green;
     }
-
+    
     .other-message {
       background: $blue;
-
+      
       &:after {
         border-bottom-color: $blue;
         left: 93%;
       }
     }
-
+    
   }
-
+  
   .chat-message {
     padding: 30px;
-
+    
     textarea {
       width: 100%;
       border: none;
@@ -191,16 +199,16 @@ $gray: #92959E;
       margin-bottom: 10px;
       border-radius: 5px;
       resize: none;
-
+      
     }
-
+    
     .fa-file-o, .fa-file-image-o {
       font-size: 16px;
       color: gray;
       cursor: pointer;
-
+      
     }
-
+    
     button {
       float: right;
       color: $blue;
@@ -210,7 +218,7 @@ $gray: #92959E;
       cursor: pointer;
       font-weight: bold;
       background: #F2F5F8;
-
+      
       &:hover {
         color: darken($blue, 7%);
       }
@@ -222,11 +230,11 @@ $gray: #92959E;
     margin-right: 3px;
     font-size: 10px;
   }
-
+  
 .online {
   color: $green;
 }
-
+  
 .offline {
   color: $orange;
 }
